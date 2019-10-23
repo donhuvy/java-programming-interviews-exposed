@@ -8,11 +8,11 @@ public class Singleton {
         if (INSTANCE == null) {
             INSTANCE = new Singleton();
         }
-
         return INSTANCE;
     }
 
     public void singletonMethod() {
         // operations here
     }
+
 }

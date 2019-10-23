@@ -1,11 +1,10 @@
 package com.wiley.javainterviewsexposed.chapter06.strategy;
 
-import org.junit.Test;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 import static org.mockito.Mockito.*;
@@ -40,4 +39,5 @@ public class ClientTest {
         c.doWork(2);
         verify(mockLogging).write("Even number: 2");
     }
+
 }
