@@ -22,4 +22,5 @@ public class ReverseTest {
     public void testPos() {
         assertTrue(comparator.compare(4, 10) > 0);
     }
+
 }
