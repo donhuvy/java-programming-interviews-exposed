@@ -1,8 +1,11 @@
 package com.wiley.javainterviewsexposed.chapter05;
 
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.TreeMap;
 import org.junit.Test;
-
-import java.util.*;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -14,11 +17,8 @@ public class Maps {
         final Map<String, String> preferences = new HashMap<>();
         preferences.put("like", "jacuzzi");
         preferences.put("dislike", "steam room");
-
         assertEquals("jacuzzi", preferences.get("like"));
-
         preferences.put("like", "sauna");
-
         assertEquals("sauna", preferences.get("like"));
     }
 
@@ -29,7 +29,6 @@ public class Maps {
         counts.put(1, "one");
         counts.put(3, "three");
         counts.put(2, "two");
-
         final Iterator<Integer> keys = counts.keySet().iterator();
         assertEquals(Integer.valueOf(1), keys.next());
         assertEquals(Integer.valueOf(2), keys.next());
@@ -45,7 +44,6 @@ public class Maps {
         counts.put(1, "one");
         counts.put(3, "three");
         counts.put(2, "two");
-
         final Iterator<Integer> keys = counts.keySet().iterator();
         assertEquals(Integer.valueOf(4), keys.next());
         assertEquals(Integer.valueOf(1), keys.next());
@@ -53,4 +51,5 @@ public class Maps {
         assertEquals(Integer.valueOf(2), keys.next());
         assertFalse(keys.hasNext());
     }
+
 }

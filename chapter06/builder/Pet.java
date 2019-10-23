@@ -21,36 +21,43 @@ public class Pet {
             this.animal = animal;
             return this;
         }
+
         public Builder withPetName(final String petName) {
             this.petName = petName;
             return this;
         }
+
         public Builder withOwnerName(final String ownerName) {
             this.ownerName = ownerName;
             return this;
         }
+
         public Builder withAddress(final String address) {
             this.address = address;
             return this;
         }
+
         public Builder withTelephone(final String telephone) {
             this.telephone = telephone;
             return this;
         }
+
         public Builder withDateOfBirth(final Date dateOfBirth) {
             this.dateOfBirth = dateOfBirth;
             return this;
         }
+
         public Builder withEmailAddress(final String emailAddress) {
             this.emailAddress = emailAddress;
             return this;
         }
+
         public Pet build() {
             if (animal == null ||
-                petName == null ||
-                ownerName == null ||
-                address == null ||
-                telephone == null) {
+                    petName == null ||
+                    ownerName == null ||
+                    address == null ||
+                    telephone == null) {
                 throw new IllegalStateException("Cannot create Pet");
             }
 
@@ -89,4 +96,5 @@ public class Pet {
         this.dateOfBirth = dateOfBirth;
         this.emailAddress = emailAddress;
     }
+
 }

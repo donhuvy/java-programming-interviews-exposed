@@ -40,7 +40,6 @@ public class Node<E extends Comparable> implements Tree<E> {
         if (toFind.compareTo(value) < 0) {
             return left.search(toFind);
         }
-
         return right.search(toFind);
     }
 
@@ -52,4 +51,5 @@ public class Node<E extends Comparable> implements Tree<E> {
             right.insert(toInsert);
         }
     }
+
 }

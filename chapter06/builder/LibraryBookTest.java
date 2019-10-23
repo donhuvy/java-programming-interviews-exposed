@@ -9,10 +9,8 @@ public class LibraryBookTest {
     @Test
     public void fictionLibraryBook() {
         final LibraryBook.Builder builder = new LibraryBook.Builder();
-        final LibraryBook book = builder
-                .withBookName("War and Peace")
-                .build();
-
+        final LibraryBook book = builder.withBookName("War and Peace").build();
         assertEquals(BookType.FICTION, book.getBookType());
     }
+
 }

@@ -1,6 +1,7 @@
 package com.wiley.javainterviewsexposed.chapter05;
 
 public class SimpleTree<E extends Comparable> {
+
     private E value;
     private SimpleTree<E> left;
     private SimpleTree<E> right;
@@ -27,11 +28,9 @@ public class SimpleTree<E extends Comparable> {
         if (toFind.equals(value)) {
             return true;
         }
-
         if (toFind.compareTo(value) < 0 && left != null) {
             return left.search(toFind);
         }
-
         return right != null && right.search(toFind);
     }
 
@@ -50,4 +49,5 @@ public class SimpleTree<E extends Comparable> {
             }
         }
     }
+
 }

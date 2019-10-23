@@ -15,12 +15,9 @@ public class SimpleTreeTest {
     public void createSampleTree() {
         final SimpleTree<Integer> t1 = new SimpleTree<>(1, null, null);
         final SimpleTree<Integer> t5 = new SimpleTree<>(5, null, null);
-
         final SimpleTree<Integer> t3 = new SimpleTree<>(5, t1, t5);
         final SimpleTree<Integer> t9 = new SimpleTree<>(9, null, null);
-
         root = new SimpleTree<>(7, t3, t9);
-
     }
 
     @Test
@@ -53,6 +50,6 @@ public class SimpleTreeTest {
         root.insert(3);
         root.insert(4);
         root.insert(5);
-
     }
+
 }

@@ -1,13 +1,12 @@
 package com.wiley.javainterviewsexposed.chapter06.builder;
 
-import java.util.Date;
-
 enum BookType {
     FICTION,
     NON_FICTION
 }
 
 public class LibraryBook {
+
     public static class Builder {
         private BookType bookType = BookType.FICTION;
         private String bookName;
@@ -43,4 +42,5 @@ public class LibraryBook {
     public String getBookName() {
         return bookName;
     }
+
 }

@@ -21,4 +21,5 @@ public class Leaf<E extends Comparable> implements Tree<E> {
             parent.setRight(new Node<>(toInsert, new Leaf<>(parent), new Leaf<>(parent)));
         }
     }
+
 }
