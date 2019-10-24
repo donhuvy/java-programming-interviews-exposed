@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import org.junit.Test;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Mergesort {
 

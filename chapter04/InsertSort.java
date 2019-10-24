@@ -1,11 +1,11 @@
-package com.wiley.javainterviewsexposed.chapter04;
+package com.wiley.javainterviewexposed.chapter04;
 
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class InsertSort {
 
